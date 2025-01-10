@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3eujhv&mkr&_(pnwdk+^s$ir=0vi$e6^5eiksfm%nnv11!4^9f
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['sakol-checkin.onrender.com','cloverzen27ns.pythonanywhere.com', '127.0.0.1', '0.0.0.0', '192.168.2.122']
+ALLOWED_HOSTS = ['sakol-checkin.vercel.app','sakol-checkin.onrender.com','cloverzen27ns.pythonanywhere.com', '127.0.0.1', '0.0.0.0', '192.168.2.122']
 
 # Application definition
 INSTALLED_APPS = [
