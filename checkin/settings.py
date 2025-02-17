@@ -21,12 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3eujhv&mkr&_(pnwdk+^s$ir=0vi$e6^5eiksfm%nnv11!4^9f'
-# SECRET_KEY = os.environ.get('SECRET_KEY', os.getenv('SECRET_KEY'))
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['sakol-checkin-muc1p9xc4-nobphadonsrs-projects.vercel.app','sakol-checkin.vercel.app','sakol-checkin.onrender.com','cloverzen27ns.pythonanywhere.com', '127.0.0.1', '0.0.0.0', '192.168.2.122']
+DEBUG = os.getenv('DEBUG')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 
 # Application definition
 INSTALLED_APPS = [
@@ -123,11 +122,9 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = '/home/cloverzen27ns/checkin/media'
 MEDIA_URL = '/media/'
 
-'''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles'),
 ]
-'''
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
