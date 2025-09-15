@@ -116,10 +116,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_ROOT = '/home/cloverzen27ns/checkin/static'
+STATIC_ROOT = '/home/your-name/checkin/static'
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/home/cloverzen27ns/checkin/media'
+MEDIA_ROOT = '/home/your-name/checkin/media'
 MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
